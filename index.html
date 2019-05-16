@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="portfolio mitadru mitra dru experimental ux visual design">
+	<meta name="description" content="Design portfolio of Mitadru Mitra">
+	<title>Mitadru Mitra</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div id="note">
+    <p style="font-weight: 400;">This website is a work in progress. <br>Of my works, only my most recent, "Designing for a Restaurant" under 'Web' opens the correct web page. This is to provide a proof of concept, and a detailed insight into my design process.</p>
+    <a id="close" style="font-weight: 400; letter-spacing: 0.1rem;">[CLOSE]</a>
+</div>
+<div class="nav-container">
+   <nav class="nav-inner transparent">
+      <div class="navbar">
+         <div class="container">
+            <div class="row">
+              <div class="brand">
+                <a href="index.html">Mitadru Mitra</a>
+              </div>
+              <div class="navicon">
+                <div class="menu-container" id="top">
+
+                  <div class="circle dark inline">
+                    <i class="icon ion-navicon"></i>
+                  </div>
+
+                  <div class="list-menu">
+                    <i class="icon ion-close-round close-iframe"></i>
+                    <div class="intro-inner">
+                      <ul id="nav-menu">
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="upcoming.html">About (Upcoming)</a></li>
+                         <li><a href="upcoming.html">Blog (Upcoming)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+
+   </nav>
+</div>
+<section id="header" class="header-one">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+          <div class="header-thumb" style="border-radius: 0px;">
+              <h1 class="wow fadeIn toptext">Hi, I'm Dru!</h1>
+              <h4 class="wow fadeInUp toptext">I work with UX.</h4>
+              <h3 class="wow fadeInUp toptext">I'm a student at Dalhousie University's Applied Computer Science program in Halifax, Nova Scotia.</h3>
+
+          </div>
+			</div>
+
+		</div>
+	</div>		
+</section>
+
+<section class="portfolio_alpha alpha1 container">
+      <div class="h-100 row r1 align-items-center">
+        <div class="row-title1 uno col-sm-4 wow fadeInUp Up" data-wow-delay="0.3s">
+          WEB
+        </div>
+        <div class="item item1 col-sm-4">
+          <a href="upcoming.html"><img class="img-fluid web1 web-1 image img-gj gnf" src="images/GNF-2.svg"></a>
+        </div>
+        <div class="item item1 col-sm-4">
+          <a href="t9c.html"><img class="img-fluid web1 web-1 image img-gj t9c" src="images/WEB-1.svg"></a>
+        </div>
+      </div>
+       <div class="h-100 row r1 align-items-center wow fadeInUp Up" data-wow-delay="0.3s">
+        <div class="row-title1 col-sm-4">
+          PROJECTS
+        </div>
+        <div class="item item3 col-sm-4">
+          <a href="upcoming.html"><img class="img-fluid img-gj image gj" src="images/gj.svg"></a>
+        </div>
+        <div class="item item1 col-sm-4">
+          <a href="upcoming.html"><img class="img-fluid img-gj image uxsalon" src="images/UXSALON2.1.svg"></a>
+        </div>
+      </div>
+       <div class="h-100 row r1 r3 align-items-center wow fadeInUp Up" data-wow-delay="0.45s">
+        <div class="row-title1 col-sm-4">
+            UPCOMING
+        </div>
+        <div class="item item2 col-sm-4">
+          <a href="upcoming.html"><img class="img-fluid img-gj image uxsalon" src="images/pol.svg"></a>
+        </div>
+        <div class="item item2 col-sm-4">
+          <a href="upcoming.html"><img class="img-fluid img-gj image uxsalon" src="images/VUI.svg"></a>
+        </div>
+      </div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+        <a href="mailto:mmitadru@gmail.com" class="wow fadeInUp Mailme"  data-wow-delay="0.3s">Send me an email</a>
+        <p class="wow fadeInUp Up"  data-wow-delay="0.3s">Copyright © 2019 Mitadru Mitra. All photos featured here, unless specified otherwise, are properties of Mitadru Mitra or are under Creative Commons licensing.</p>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript">
+   //sticky header
+    var navbar;
+var sticky;
+window.onscroll = function() {bar()};
+navbar = document.getElementById("top");
+
+sticky = navbar.offsetTop;
+
+function bar() {
+  if (window.scrollY > sticky) 
+  {
+    navbar.classList.add("sticky-div")
+  } 
+  else if(window.scrollY <= sticky)
+  {
+    navbar.classList.remove("sticky-div");
+  }
+}//end of sticky header
+close = document.getElementById("close");
+ close.addEventListener('click', function() {
+   note = document.getElementById("note");
+   note.style.display = 'none';
+ }, false);
+</script>
+</body>
+</html>
